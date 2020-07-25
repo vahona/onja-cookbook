@@ -9,17 +9,17 @@
 </head>
 
 <body>
-  <h1>
+  <form id="cookbook">
+      <h1>
     Onja cookbook
   </h1>
-  <form id="cookbook">
-    <p>What the recipe name ?</p>
+    <label for="recipe-name">What the recipe name ?</label><br>
     <input class="input-form-name" type="text" id="name-of-recipe" name="name-recipe"
-      placeholder="Enter recipe name here" required />
-    <p>Picture of the result (URL)</p>
-    <input type="url" id="food-url" name="url-cook" value="Name" required />
-    <p> Who's the cook?</p>
-    <input type="text" id="name-of-cook" name="name" value="type" required /><br>
+      placeholder="Enter recipe name here" required /><br>
+    <label for="url_picture">Picture of the result (URL)</label><br>
+    <input type="url" id="food-url" name="url-cook" value="Here the url" required /><br>
+    <label for="cook_name">Who's the cook?</label><br>
+    <input type="text" id="name-of-cook" name="name" value="Name" required /><br>
     <label for="select_difficulty">What the difficulty?</label><br>
     <select name="difficulty" id="tl_select">
       <option value=""> How difficult </option>
@@ -35,12 +35,12 @@
       <option value="30">More than 30 min</option>
       <option value="40">More that 40 min</option>
       <option value="60"> More than 60 min or so</option>
-    </select>
-    <p>Ingredients</p>
+    </select><br>
+    <label for="ingredient">Ingredients</label><br>
     <input class="recipe_ingredient" type="text" id="name-of-ingredient" name="name-ingredient"
       placeholder="Enter ingredients name here" required /><br>
-    <button class="add_new_ingredient">Add a new ingredient to the list</button>
-    <p>Steps</p>
+    <button class="add_new_ingredient">Add a new ingredient to the list</button><br>
+    <label for="step">Steps</label><br>
     <input class="step_of_cook" type="text" id="way_to_cook" name="step_cook"
       placeholder="Enter the step of how to cook" required /><br>
     <button class="add_new_steps">Add a new step to the list</button><br>
