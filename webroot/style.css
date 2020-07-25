@@ -4,13 +4,13 @@ body {
     justify-content: center;
     font-size: 1.5rem;
 }
-
+ 
 #cookbook {
-  background-color: rgb(198, 119, 218);
+  background-color: rgb(85, 12, 104);
   color: white;
   max-width: 400px;
   padding: 2rem;
-  place-items: center center;
+
   
 }
 
@@ -19,6 +19,7 @@ button {
   padding: 0.5rem;
   border-radius: 5px;
   margin-top: 1rem;
+  
 }
 
 input,select {
@@ -27,5 +28,10 @@ input,select {
 
 input[type=text],
 input[type=url]{
-  color: rgb(221, 44, 44);
+  color: rgb(165, 42, 42);
+  font-size: 1rem;
+
 }
+
+
+ 
