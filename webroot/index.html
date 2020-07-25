@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Onja Cookbook</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <h1>
+    Onja cookbook
+  </h1>
+  <form id="cookbook">
+    <p>What the recipe name ?</p>
+    <input class="input-form-name" type="text" id="name-of-recipe" name="name-recipe"
+      placeholder="Enter recipe name here" required />
+    <p>Picture of the result (URL)</p>
+    <input type="url" id="food-url" name="url-cook" value="Name" required />
+    <p> Who's the cook?</p>
+    <input type="text" id="name-of-cook" name="name" value="type" required /><br>
+    <label for="select_difficulty">What the difficulty?</label><br>
+    <select name="difficulty" id="tl_select">
+      <option value=""> How difficult </option>
+      <option value="easy">Easy</option>
+      <option value="difficult">Difficulty</option>
+      <option value="doable">Doable</option>
+      <option value="so_easy"> So easy </option>
+    </select><br>
+    <label for="duration_time">How much time does it take?</label><br>
+    <select name="duration" id="tl_select">
+      <option value=""> what the time </option>
+      <option value="5">Less than 15 min</option>
+      <option value="30">More than 30 min</option>
+      <option value="40">More that 40 min</option>
+      <option value="60"> More than 60 min or so</option>
+    </select>
+    <p>Ingredients</p>
+    <input class="recipe_ingredient" type="text" id="name-of-ingredient" name="name-ingredient"
+      placeholder="Enter ingredients name here" required /><br>
+    <button class="add_new_ingredient">Add a new ingredient to the list</button>
+    <p>Steps</p>
+    <input class="step_of_cook" type="text" id="way_to_cook" name="step_cook"
+      placeholder="Enter the step of how to cook" required /><br>
+    <button class="add_new_steps">Add a new step to the list</button><br>
+    <button class="submitOrder" type="submit">Submit</button>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>
